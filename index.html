@@ -1,198 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color:grey;
-        }
-
-        header {
-            background-color:orange
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li a {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="/storage/emulated/0/gomathi/1743168762450.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>Gomathi A</h1>
-            <p>Am B.sc Computer Science Student</p>
-        </div>
+        <a href="#" class="logo">Susi</a>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Education</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Certifications</a>
+            <a href="#" >Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="section-content">
-            <h2>about Me</h2>
-            <p>Im a computer science student.expert who is passinate about creating dynamic and user-friendly websites.
-                i'm driven by the desire to craft high-performance web applications that enhance user experience and provide seamless digital solutions.
-                
-                 </p>
-
+    <section class="home">
+        <div class="home-img">
+            <img src="girl.png" alt="image">
         </div>
+
+           <div class="home-content">
+            <h1> Hi, It's <span>Susi</h1>
+
+            <h3 class="typing-text"> I'm a <span></span></h3>
+            <p>Computer Science student. Highly self-motivated individual with a passion for overcoming challenges. I consider myself a responsible and orderly person. 
+                After a challenging first year, currently thriving and actively engaged in learning, participating in events and exploring new opportunities in the field.
+                I am looking for my first work exprience.</p>
+
+                 <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 </div>
+                 <a href="#" class="btn">Hire me</a>
+           </div>
     </section>
-
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>University of Madras</p>
-            
-            
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>java</li>
-                <li>power point</li>
-                <li>ms word</li>
-                <li>Python</li>
-                <li>Excel</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">juice shop website-Html</a></li>
-                <li><a href="#">Student Management-python</a></li>
-                <li><a href="#">sudoku game-java</a></li>
-                <li><a href="#">Sales dashborad-Excel</a></li> 
-                <!-- Add more project links here -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="/storage/emulated/0/gomathi/1743832648261.jpg" target="_blank" class="download-button">Download CV</a>
-        </center>
-        </div>
-        
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Gomathi A</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
-
